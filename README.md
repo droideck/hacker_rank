@@ -1,2 +1,1 @@
-# hacker_rank
-Solutions to Hacker Rank challenges
+# Hacker Rank solutions by droideck
