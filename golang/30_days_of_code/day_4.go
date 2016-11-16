@@ -36,9 +36,17 @@ func main() {
 	var T, age int
 
 	fmt.Scan(&T)
+	if T < 1 || T > 4 {
+		fmt.Println("Input should be >=1 and <=4")
+		return
+	}
 
 	for i := 0; i < T; i++ {
 		fmt.Scan(&age)
+		if age < -5 || age > 30 {
+			fmt.Println("Age should be >=-5 and <=30")
+			continue
+		}
 		p := person{age: age}
 		p = p.NewPerson(age)
 		p.amIOld()
